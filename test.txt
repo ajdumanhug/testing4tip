@@ -1,1 +1,1 @@
-../../../../../etc/passwd
+/root/flag.txt
